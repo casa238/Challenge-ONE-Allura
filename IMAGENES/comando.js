@@ -8,9 +8,17 @@ var elemento = document.querySelector(".texto-resultado");
 
 document.querySelector(".btn-copiar").addEventListener("click",()=>{
   copyToClipBoard(elemento);
+  alert("Texto Copiado!!");    
+  clear();
   
 })
 
+function clear() {
+  output_text.value = "";
+  input_text.value = "";
+  alert.hidden = false;
+  copiar.style.visibility = "hidden";
+}
 
 botonEncriptar.onclick = encriptar;
 botonDesencriptar.onclick = desencriptar;
