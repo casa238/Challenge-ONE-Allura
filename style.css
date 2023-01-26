@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;  
   font-family: 'Kufam', sans-serif;
+  font-size: 18px
   /*background: #f3f5fc;
   font-family: "inter";
   font-weight: 400;
@@ -11,27 +12,39 @@
 
 body{
     
-    background: linear-gradient(#FFCC99, #6699FF );
+    background: linear-gradient(#f3f5FC,#6699FF);
+  
 }
 
-header{
-    width: 100%;
-    height: 65px;
+
+header{    
+    display:inline-flex;
+ 
+    text-align: center;
+    
+}
+.titulo{
+    margin-left: 300px;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 40px;
+    
 }
 
 .logo{
     padding-top: 10px;
-    margin-left: 50px;
-    width: 9%;
+    margin-left: 130px;
+    width: 16%;
 }
 
+
 main{
-    width: 100%;
+    width: 90%;
     height: 90%;
-    /*background-color: green;*/
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
+    margin-left: 30px;
     /*display: flex;
     margin-bottom: 50px;
     margin-left: 80px;*/
@@ -40,10 +53,10 @@ main{
 
 
 .section1{
-    margin-left: 50px;
-    margin-top: 50px;
-    width: 650px;
-    height: 450px;
+    margin-left: 100px;
+    margin-top: 30px;
+    width: 700px;
+    height: 440px;
     padding: 30px;
     background-color: #F0F8FF;
     border-radius: 20px;
@@ -116,10 +129,11 @@ main{
 
 .section2{
     width: 25%;
-    
+    height: 530px;
+    margin-top: 20px;
     background-color: #F0F8FF;
     border-radius: 20px;
-    margin-right: 50px;
+    margin-right: 5px;
     box-sizing: border-box;
     overflow: hidden;
     
@@ -183,15 +197,17 @@ footer {
     width: 100%;
     background: #0a3871;
     padding-bottom: 10px;
-  }
+    height: 70%;
+    margin-top: 20px;
+}
   
-  .top-footer {
+.top-footer {
     width: 100%;
     display: flex;
     justify-content: center;
-  }
+}
   
-  .iconos a {
+.iconos a {
     display: block;
     width: 50px;
     height: 50px;
@@ -200,22 +216,22 @@ footer {
     margin: 10px;
     text-align: center;
     margin: 10px;
-  }
+}
   
-  .iconos i {
+.iconos i {
     font-size: 50px;
     line-height: 50px;
-  }
+}
   
-  .bottom-footer {
+.bottom-footer {
     width: 100%;
     text-align: center;
-  }
+}
   
-  .bottom-footer p {
-    font-size: 12px;
-    color: black;
-  }
+.bottom-footer p {
+    font-size: 16px;
+    color:white;
+}
 
 .ocultar{
     display: none;

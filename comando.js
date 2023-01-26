@@ -8,36 +8,36 @@ var elemento = document.querySelector(".texto-resultado");
 
 document.querySelector(".btn-copiar").addEventListener("click",()=>{
   copyToClipBoard(elemento);
-  alert("Texto Copiado!!");    
-  clear();
-  
+  alert("Texto copiado!!");
+ 
+    
+ 
 })
 
-function clear() {
-  output_text.value = "";
-  input_text.value = "";
-  alert.hidden = false;
-  copiar.style.visibility = "hidden";
-}
 
 botonEncriptar.onclick = encriptar;
 botonDesencriptar.onclick = desencriptar;
+
+
+
 
 function copyToClipBoard(elemento){
   var inputOculto = document.createElement("input");
   inputOculto.setAttribute("value",elemento.innerText);
 
-  document.body.appendChild(inputOculto);
+  document.text-resultado.appendChild(inputOculto);
   inputOculto.select();
 
   document.execCommand("copy");
+  
 
 }
 
 
 function encriptar(){
     ocultarObjetos();
-    resultado.textContent = encriptarTexto(recuperarTexto()); 
+    var area = recuperarTexto();
+    resultado.textContent = encriptarTexto(area.toString().toLowerCase()); 
 }
 
 function desencriptar(){
